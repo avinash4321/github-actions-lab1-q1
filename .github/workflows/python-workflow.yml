@@ -12,6 +12,12 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
+    
+    - name: Checkout Repo
+          uses: actions/checkout@v4 
+      
+    - name: list files
+      run: ls -lrta
 
     - name: Install dependencies
       run: |
